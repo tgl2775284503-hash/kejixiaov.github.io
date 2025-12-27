@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <style>
+        /* 使内容居中 */
+        .content {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* 去掉链接下划线并设置为类似二级标题 */
+        .content a {
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* 教程目录部分 */
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,7 +35,15 @@
 
     <!-- 主体内容 -->
     <div class="content">
-        {{ content }}
+        <h1>教程目录</h1>
+        <ul>
+            {% assign tutorials = site.pages | where: "category", "tutorial" %}
+            {% for page in tutorials %}
+                {% if page.url != "/" %}
+                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
     </div>
 
     <!-- 页脚 -->
