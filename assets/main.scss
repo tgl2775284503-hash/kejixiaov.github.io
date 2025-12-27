@@ -15,14 +15,15 @@ hr.sep {
    顶部 Header 样式
    ========================= */
 
-/* 左侧：YouTube 频道入口 */
+/* 顶部头像样式（减小头像尺寸） */
 .site-avatar {
-  width: 20px;   /* 调整头像大小 */
-  height: 20px;
+  width: 24px;   /* 调整头像的尺寸 */
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid #ddd;
 }
+
 
 /* 右侧：返回教程目录 */
 .site-title {
