@@ -20,7 +20,7 @@ Youtobe视频教程（完整版）： [跳转链接](https://www.youtube.com/wat
 - 打开全局上网模式
 - 网络位置查询： [ITDOG](https://www.itdog.cn/localhost/)
 
-##第三步：使用模拟器注册
+## 第三步：使用模拟器注册
 - 打开模拟器进行位置查询
 - 使用谷歌浏览器进行注册
 
