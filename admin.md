@@ -1,12 +1,12 @@
 ---
 layout: default
 title: 教程管理后台
-permalink: /admin/
+permalink: /admin.html
 ---
 
 <div style="margin: 14px 0; padding: 12px 14px; border: 1px solid #ddd; border-radius: 10px;">
   <a href="{{ site.baseurl }}/" style="margin-right: 14px;">⬅ 返回教程目录</a>
-  <a href="{{ site.baseurl }}/admin/">🛠 返回管理后台</a>
+  <a href="{{ site.baseurl }}/admin.html">🛠 返回管理后台</a>
 </div>
 
 # 🛠 教程管理后台（自动生成）
