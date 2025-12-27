@@ -1,10 +1,16 @@
+/* 固定导航栏样式 */
 .navbar {
   display: flex;
-  justify-content: space-between; /* 左右对齐 */
+  justify-content: space-between;
   align-items: center;
+  position: fixed; /* 固定在页面顶部 */
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
+  z-index: 1000; /* 保证导航栏位于其他内容上方 */
 }
 
 .navbar-left a, .navbar-right a {
@@ -19,9 +25,10 @@
   border-radius: 5px;
 }
 
+/* 让标题和内容不被导航栏遮挡 */
 .page-title {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 80px; /* 使标题距离固定的导航栏有间距 */
 }
 
 .page-title h1 {
