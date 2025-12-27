@@ -1,5 +1,3 @@
----
----
 @import "minima";
 
 /* =========================
@@ -18,21 +16,42 @@ hr.sep {
    ========================= */
 
 /* 左侧：YouTube 频道入口 */
+.site-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* 右侧：返回教程目录 */
 .site-title {
   font-weight: 700;
   padding: 6px 12px;
   border: 1px solid #ddd;
   border-radius: 10px;
   text-decoration: none;
-  color: inherit;
 }
 
 .site-title:hover {
   background: #f5f5f5;
-  text-decoration: none;
 }
 
-/* 右侧：返回教程目录 */
+/* Header 布局优化（确保头像和内容靠左） */
+.header-inner {
+  display: flex;
+  justify-content: flex-start; /* 使内容贴左 */
+  align-items: center;
+  padding: 8px 16px;   /* 控制上下高度 */
+  width: 100%;          /* 确保宽度铺满 */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;            /* 头像和文字的间距 */
+}
+
 .site-nav .page-link {
   font-weight: 600;
   text-decoration: none;
@@ -48,25 +67,3 @@ hr.sep {
 .site-footer {
   margin-top: 60px;
 }
-/* 顶部头像样式（精简版） */
-.site-avatar {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid #ddd;
-}
-/* Header 布局优化（去臃肿，贴左） */
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px;   /* 控制上下高度 */
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;            /* 头像和文字的距离 */
-}
-
