@@ -1,0 +1,13 @@
+---
+---
+
+@import "minima";
+
+/* 恢复并美化横线 hr（Markdown 的 --- 会变成 hr） */
+hr {
+  display: block !important;
+  height: 0 !important;
+  margin: 28px 0 !important;
+  border: 0 !important;
+  border-top: 1px solid #e5e7eb !important;
+}
