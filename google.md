@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Google 注册完整教程
+category: tutorial
 ---
 
 # Google 注册完整教程（2025）
