@@ -4,4 +4,4 @@ markdown: kramdown
 
 header_pages:
   - toc.md
-  - admin.md
+  
