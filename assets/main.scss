@@ -1,7 +1,7 @@
-/* 固定导航栏样式 */
+/* 固定顶部导航栏样式 */
 .navbar {
   display: flex;
-  justify-content: center;  /* 中间对齐 */
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -11,24 +11,30 @@
   background-color: #333;
   color: #fff;
   z-index: 1000;
-  border-bottom: 2px solid #444;
+  border-bottom: 2px solid #444;  /* 添加底部横线 */
+  height: 60px;  /* 固定行高 */
 }
 
-.navbar-center {
-  display: flex;
-  justify-content: center;  /* 使两个链接在导航栏内居中 */
-  align-items: center;
-  gap: 20px;  /* 设置间距，确保两个链接之间有适当的间距 */
-}
-
-.navbar-link {
+/* 导航栏中链接的样式 */
+.navbar-left a, .navbar-right a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px; /* 调整为二级标题大小 */
-  padding: 10px;
+  font-size: 20px;  /* 调整为二级标题大小 */
+  padding: 15px;  /* 给链接一定的内边距 */
 }
 
-.navbar-link:hover {
+.navbar-left a:hover, .navbar-right a:hover {
   background-color: #555;
   border-radius: 5px;
+}
+
+/* 让页面内容不被固定的导航栏遮挡 */
+.page-title {
+  text-align: center;
+  margin-top: 80px;  /* 使标题距离固定的导航栏有间距 */
+}
+
+.page-title h1 {
+  font-size: 24px;
+  color: #333;
 }
