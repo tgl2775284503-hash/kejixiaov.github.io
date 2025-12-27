@@ -1,39 +1,21 @@
-/* 固定导航栏并添加横线 */
+/* 固定导航栏样式 */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;  /* 固定在页面顶部 */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
-  z-index: 1000;  /* 确保导航栏位于其他内容之上 */
-  border-bottom: 2px solid #444;  /* 添加底部横线 */
+  z-index: 1000;
+  border-bottom: 2px solid #444;
 }
 
-/* 导航栏中链接的样式 */
-.navbar-left a, .navbar-right a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.navbar-left a:hover, .navbar-right a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-/* 让标题和内容不被导航栏遮挡 */
+/* 页面标题部分的样式 */
 .page-title {
   text-align: center;
-  margin-top: 80px;  /* 使标题距离固定的导航栏有间距 */
-}
-
-.page-title h1 {
-  font-size: 24px;
-  color: #333;
+  margin-top: 100px; /* 调整距离顶部的间距，防止被固定的导航栏遮挡 */
 }
