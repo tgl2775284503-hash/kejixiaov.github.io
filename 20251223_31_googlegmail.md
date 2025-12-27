@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Googl 邮箱注册教程&避坑指南 
-url: /20251223_31_googlegmail.html
 category: tutorial
 ---
 ## Googl 邮箱注册教程&避坑指南  
