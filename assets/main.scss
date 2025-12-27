@@ -3,13 +3,13 @@
     display: flex;  /* 使用 flexbox 进行布局 */
     justify-content: center;  /* 水平居中对齐 */
     align-items: center;  /* 垂直居中对齐 */
-    padding: 20px 0;  /* 上下内边距 */
     width: 100%;  /* 宽度 100% */
     text-align: center;  /* 文字居中 */
+    padding: 20px 0;  /* 上下内边距 */
 }
 
 .header-left, .site-nav {
-    margin: 0 15px;  /* 左右间距 */
+    margin: 0 15px;  /* 左右间距，确保它们有空间，不会挤在一起 */
 }
 
 .site-title {
@@ -19,6 +19,7 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     text-decoration: none;
+    margin-right: 20px; /* 可选，给左右之间加入一点空隙 */
 }
 
 .site-title:hover {
@@ -33,4 +34,13 @@
     border-radius: 10px;
 }
 
-/* 你也可以调整其他样式，确保页面元素的间距符合要求 */
+/* 响应式布局设置 */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;  /* 在小屏幕下，调整为垂直排列 */
+        align-items: center;
+    }
+    .header-left, .site-nav {
+        margin: 10px 0;  /* 给上下部分留出空间 */
+    }
+}
