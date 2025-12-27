@@ -48,3 +48,11 @@ hr.sep {
 .site-footer {
   margin-top: 60px;
 }
+/* 顶部头像样式 */
+.site-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
