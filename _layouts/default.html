@@ -1,102 +1,85 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-    <style>
-        /* 顶部按钮在同一行 */
-        header {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
 
-        /* 按钮样式 */
-        header a {
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: white;
-        }
+  <style>
+    /* 顶部按钮同一行 */
+    header {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0 10px;
+    }
+    header a {
+      padding: 10px 18px;
+      font-size: 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .youtube-btn { background: #4CAF50; }
+    .back-btn { background: #2196F3; }
 
-        /* YouTube按钮 */
-        .youtube-btn {
-            background-color: #4CAF50;
-        }
+    /* 页面主体：整体居中，但正文内容左对齐 */
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 18px 16px 40px;
+      text-align: left;
+    }
 
-        /* 返回目录按钮 */
-        .back-btn {
-            background-color: #2196F3;
-        }
+    /* 标题居中显示 */
+    .content h1, .content h2, .content h3 {
+      text-align: center;
+      margin: 18px 0;
+    }
 
-        /* 内容区域 */
-        .content {
-            text-align: center;
-            margin-top: 30px;
-        }
+    /* 列表：左对齐，圆点跟文本对齐 */
+    .content ul {
+      display: inline-block;
+      text-align: left;
+      padding-left: 0;
+      margin: 0 auto;
+      list-style-position: inside;
+    }
 
-        /* 列表左对齐 */
-        .content ul {
-            list-style-position: inside;
-            padding-left: 0;
-            text-align: left;
-            display: inline-block;
-            max-width: 80%; /* 限制列表宽度 */
-        }
+    /* 目录列表里的链接：去下划线，更像标题 */
+    .content a {
+      text-decoration: none;
+      color: #111;
+    }
+    .content a:hover {
+      text-decoration: underline;
+    }
 
-        .content ul li {
-            font-size: 1.2em;
-            line-height: 1.8em;
-            margin-bottom: 10px;
-        }
-
-        /* 去除链接下划线 */
-        .content a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        /* 标题样式 */
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        /* 隐藏页脚 */
-        footer {
-            display: none;
-        }
-    </style>
+    /* 不显示版权 */
+    footer { display: none; }
+  </style>
 </head>
+
 <body>
+  <header>
+    <a class="youtube-btn"
+       href="https://www.youtube.com/@%E7%A7%91%E6%8A%80%E5%B0%8FV"
+       target="_blank" rel="noopener">
+      科技小V YouTube 频道入口
+    </a>
 
-    <!-- 顶部按钮区域 -->
-    <header>
-        <a href="https://www.youtube.com/@%E7%A7%91%E6%8A%80%E5%B0%8FV" target="_blank" class="youtube-btn">科技小V YouTube 频道入口</a>
-        <a href="{{ site.baseurl }}/" class="back-btn">返回教程目录</a>
-    </header>
+    <a class="back-btn" href="{{ '/' | relative_url }}">
+      返回教程目录
+    </a>
+  </header>
 
-    <!-- 页面内容 -->
-    <div class="content">
-        <h1>{{ page.title }}</h1>
-        <ul>
-            {% assign tutorials = site.pages | where: "category", "tutorial" %}
-            {% for page in tutorials %}
-                {% if page.url != "/" %}
-                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+  <!-- ✅ 关键：必须输出每个页面自己的内容 -->
+  <main class="content">
+    {{ content }}
+  </main>
 
-    <!-- 移除页脚 -->
-    <footer>
-        <p>© 2025 科技小V 版权所有</p>
-    </footer>
-
+  <footer>© 2025 科技小V 版权所有</footer>
 </body>
 </html>
