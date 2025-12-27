@@ -3,7 +3,7 @@ layout: default
 title: Googl 邮箱注册教程&避坑指南 
 category: tutorial
 ---
-# Googl 邮箱注册教程&避坑指南  
+## Googl 邮箱注册教程&避坑指南  
 日期：2025.12.23
 
 <hr class="sep">
