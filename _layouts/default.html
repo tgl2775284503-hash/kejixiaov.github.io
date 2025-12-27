@@ -6,24 +6,41 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
     <style>
-        /* 使内容居中 */
+        /* 主体内容居中 */
         .content {
             text-align: center;
             margin-top: 30px;
         }
 
-        /* 去掉链接下划线并设置为类似二级标题 */
+        /* 列表左对齐，去掉下划线 */
+        .content ul {
+            list-style-position: inside; /* 小圆点与文本对齐 */
+            padding-left: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .content ul li {
+            font-size: 1.2em;
+            line-height: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        /* 去掉链接下划线 */
         .content a {
             text-decoration: none;
-            font-size: 1.5em;
-            font-weight: bold;
             color: #333;
         }
 
-        /* 教程目录部分 */
+        /* 移除页脚的版权信息 */
+        footer {
+            display: none; /* 隐藏页脚 */
+        }
+
+        /* 标题样式 */
         h1 {
-            text-align: center;
             font-size: 2em;
+            text-align: center;
             margin-bottom: 20px;
         }
     </style>
@@ -46,7 +63,7 @@
         </ul>
     </div>
 
-    <!-- 页脚 -->
+    <!-- 移除页脚 -->
     <footer>
         <p>© 2025 科技小V 版权所有</p>
     </footer>
