@@ -12,7 +12,7 @@ permalink: /admin/
 
 ---
 
-## 📘 教程列表（自动）
+## 📘 目录列表（自动）
 
 <ul>
 {% assign tutorials = site.pages | where: "category", "tutorial" | sort: "date" | reverse %}
