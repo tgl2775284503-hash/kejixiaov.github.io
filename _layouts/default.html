@@ -6,18 +6,46 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
     <style>
-        /* 主体内容居中 */
+        /* 顶部按钮在同一行 */
+        header {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* 按钮样式 */
+        header a {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* YouTube按钮 */
+        .youtube-btn {
+            background-color: #4CAF50;
+        }
+
+        /* 返回目录按钮 */
+        .back-btn {
+            background-color: #2196F3;
+        }
+
+        /* 内容区域 */
         .content {
             text-align: center;
             margin-top: 30px;
         }
 
-        /* 列表左对齐，去掉下划线 */
+        /* 列表左对齐 */
         .content ul {
-            list-style-position: inside; /* 小圆点与文本对齐 */
+            list-style-position: inside;
             padding-left: 0;
             text-align: left;
             display: inline-block;
+            max-width: 80%; /* 限制列表宽度 */
         }
 
         .content ul li {
@@ -26,33 +54,35 @@
             margin-bottom: 10px;
         }
 
-        /* 去掉链接下划线 */
+        /* 去除链接下划线 */
         .content a {
             text-decoration: none;
             color: #333;
         }
 
-        /* 移除页脚的版权信息 */
-        footer {
-            display: none; /* 隐藏页脚 */
-        }
-
         /* 标题样式 */
         h1 {
             font-size: 2em;
-            text-align: center;
             margin-bottom: 20px;
+        }
+
+        /* 隐藏页脚 */
+        footer {
+            display: none;
         }
     </style>
 </head>
 <body>
 
-    <!-- 引入 header.html -->
-    {% include header.html %}
+    <!-- 顶部按钮区域 -->
+    <header>
+        <a href="https://www.youtube.com/@%E7%A7%91%E6%8A%80%E5%B0%8FV" target="_blank" class="youtube-btn">科技小V YouTube 频道入口</a>
+        <a href="{{ site.baseurl }}/" class="back-btn">返回教程目录</a>
+    </header>
 
-    <!-- 主体内容 -->
+    <!-- 页面内容 -->
     <div class="content">
-        <h1>教程目录</h1>
+        <h1>{{ page.title }}</h1>
         <ul>
             {% assign tutorials = site.pages | where: "category", "tutorial" %}
             {% for page in tutorials %}
