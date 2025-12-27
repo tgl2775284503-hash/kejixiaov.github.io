@@ -5,12 +5,12 @@ category: tutorial
 ---
 # Googl 邮箱注册教程&避坑指南  
 日期：2025.12.23
-<hr style="height:2px;background:red;border:0;margin:20px 0;">
+---
 
 
 ## 视频教程
 Youtobe视频教程（完整版）： [跳转链接](https://www.youtube.com/watch?v=-spjGRq82wo)
-
+---
 ## 第一步：准备下面工具
 - 优质代理节点：日本或新加坡
 - 蓝叠模拟器（国际版）： [下载地址](https://www.bluestacks.com/download.html)
@@ -25,10 +25,10 @@ Youtobe视频教程（完整版）： [跳转链接](https://www.youtube.com/wat
 ## 第三步：使用模拟器注册
 - 打开模拟器进行位置查询
 - 使用谷歌浏览器进行注册
-
+---
 ## 如果想节约您宝贵的时间
 可以使用推荐账号平台： [账号星球](http://accboy7kjxv.acceboy.com)
-
+---
 ### 合规与免责声明
 - 本文仅为网络技术科普，不构成任何使用建议。
 - 中国大陆对网络接入与跨境通信有严格法律要求，请严格遵守相关法律法规。
