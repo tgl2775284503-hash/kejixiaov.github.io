@@ -1,4 +1,4 @@
-/* 固定顶部导航栏样式 */
+/* 固定顶部导航栏样式，和底部一致 */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -11,16 +11,16 @@
   background-color: #333;
   color: #fff;
   z-index: 1000;
-  border-bottom: 2px solid #444;  /* 添加底部横线 */
-  height: 60px;  /* 固定行高 */
+  border-bottom: 2px solid #444; /* 分割线 */
+  height: 60px;  /* 固定的行高 */
 }
 
 /* 导航栏中链接的样式 */
 .navbar-left a, .navbar-right a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;  /* 调整为二级标题大小 */
-  padding: 15px;  /* 给链接一定的内边距 */
+  font-size: 20px;  /* 设置为二级标题大小 */
+  padding: 10px;
 }
 
 .navbar-left a:hover, .navbar-right a:hover {
@@ -37,4 +37,20 @@
 .page-title h1 {
   font-size: 24px;
   color: #333;
+}
+
+/* 底部样式 */
+.site-footer {
+  background-color: #333;
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid #444;
+}
+
+.site-footer .wrapper {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
 }
