@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 左右对齐 */
   align-items: center;
   padding: 10px 20px;
   background-color: #333;
@@ -17,4 +17,14 @@
 .navbar-left a:hover, .navbar-right a:hover {
   background-color: #555;
   border-radius: 5px;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-title h1 {
+  font-size: 24px;
+  color: #333;
 }
