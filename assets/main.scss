@@ -4,10 +4,11 @@
 @import "minima";
 
 /* 恢复并美化横线 hr（Markdown 的 --- 会变成 hr） */
-hr {
-  display: block !important;
-  border: 0 !important;
-  height: 1px !important;
-  background: #e5e7eb !important;
-  margin: 28px 0 !important;
+hr.sep {
+  display: block;
+  border: 0;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 28px 0;
 }
+
