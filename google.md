@@ -1,3 +1,10 @@
+---
+layout: default
+title: Google 注册完整教程
+---
+
+# Google 注册完整教程（2025）
+
 # Googl 邮箱注册教程&避坑指南 
 日期：2025.12.23
 ## 视频教程
