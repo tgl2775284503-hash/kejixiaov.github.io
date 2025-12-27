@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">  <!-- 样式文件路径，如果有的话 -->
+</head>
+<body>
+
+    <!-- 引入 header.html -->
+    {% include header.html %}
+
+    <!-- 主体内容 -->
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 科技小V 版权所有</p>
+    </footer>
+
+</body>
+</html>
