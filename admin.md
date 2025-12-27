@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 后台
+title: 返回管理界面
 permalink: /admin/
 ---
 
