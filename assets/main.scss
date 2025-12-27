@@ -33,3 +33,9 @@ background: #f5f5f5;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
+/* 将页面内容居中 */
+.main-content {
+    margin: 0 auto;
+    width: 80%; /* 可以根据需要调整宽度 */
+    text-align: center;
+}
