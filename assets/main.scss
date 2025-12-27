@@ -56,4 +56,17 @@ hr.sep {
   object-fit: cover;
   border: 1px solid #ddd;
 }
+/* Header 布局优化（去臃肿，贴左） */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;   /* 控制上下高度 */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;            /* 头像和文字的距离 */
+}
 
