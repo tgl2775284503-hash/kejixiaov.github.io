@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
@@ -39,7 +39,7 @@
       margin: 18px 0;
     }
 
-    /* 列表：左对齐，圆点跟文本对齐 */
+    /* 目录列表 */
     .content ul {
       display: inline-block;
       text-align: left;
@@ -49,12 +49,18 @@
     }
 
     /* 目录列表里的链接：去下划线，更像标题 */
+    .content ul li {
+      font-size: 1.5em;  /* 设置字体为3号 */
+      line-height: 1.5em;  /* 设置1倍行间距 */
+      margin-bottom: 15px;  /* 每个列表项底部的间距 */
+      text-align: left;  /* 确保内容左对齐 */
+    }
     .content a {
       text-decoration: none;
       color: #111;
     }
     .content a:hover {
-      text-decoration: underline;
+      text-decoration: underline; /* 鼠标悬停时下划线 */
     }
 
     /* 不显示版权 */
