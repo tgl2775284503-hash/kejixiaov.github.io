@@ -15,15 +15,10 @@ hr.sep {
    顶部 Header 样式
    ========================= */
 
-/* 顶部头像样式（减小头像尺寸） */
+/* 删除与头像相关的样式 */
 .site-avatar {
-  width: 10px;   /* 调整头像的尺寸 */
-  height: 10px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid #ddd;
+  display: none;  /* 隐藏头像 */
 }
-
 
 /* 右侧：返回教程目录 */
 .site-title {
@@ -50,7 +45,7 @@ hr.sep {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 12px;  /* 增加头像和文字之间的间距 */
+  gap: 12px;  /* 增加文字和元素之间的间距 */
 }
 
 .site-nav .page-link {
@@ -64,7 +59,4 @@ hr.sep {
 
 /* =========================
    Footer（可选微调）
-   ========================= */
-.site-footer {
-  margin-top: 60px;
-}
+   ===
