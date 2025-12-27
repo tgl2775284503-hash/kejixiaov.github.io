@@ -9,7 +9,7 @@ title: "教程目录"
   {% assign tutorials = site.pages | where: "category", "tutorial" %}
   {% for t in tutorials %}
     {% if t.url != "/" %}
-      <li><a href="{{ t.url | relative_url }}">{{ t.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ t.url | relative_url }}">{{ t.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
