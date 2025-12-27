@@ -1,0 +1,17 @@
+---
+---
+
+@import "minima";
+
+/* 顶部站点标题加粗 */
+.site-title {
+  font-weight: 700;
+}
+
+/* 顶部右侧导航看起来像按钮 */
+.site-nav .page-link {
+  font-weight: 700;
+  padding: 6px 10px;
+  border: 1px solid;
+  border-radius: 8px;
+}
