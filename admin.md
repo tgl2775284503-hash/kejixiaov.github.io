@@ -4,11 +4,7 @@ title: 管理后台
 permalink: /admin/
 ---
 
-<div style="margin: 14px 0; padding: 12px 14px; border: 1px solid #ddd; border-radius: 10px;">
-  <a href="{{ site.baseurl }}/">⬅ 返回教程目录</a>
-</div>
-
-# 🛠 教程管理后台（自动生成）
+<h1 style="text-align:center;">🛠 教程管理后台（自动生成）</h1>
 
 ## 📘 教程列表（自动）
 
@@ -25,3 +21,4 @@ permalink: /admin/
   <br>
 {% endfor %}
 </ul>
+
