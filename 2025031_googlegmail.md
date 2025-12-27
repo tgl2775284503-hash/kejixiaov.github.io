@@ -5,6 +5,8 @@ category: tutorial
 ---
 # Googl 邮箱注册教程&避坑指南  
 日期：2025.12.23
+<hr style="height:2px;background:red;border:0;margin:20px 0;">
+
 
 ## 视频教程
 Youtobe视频教程（完整版）： [跳转链接](https://www.youtube.com/watch?v=-spjGRq82wo)
