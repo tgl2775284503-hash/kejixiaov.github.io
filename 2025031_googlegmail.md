@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Google 注册完整教程
+title: Googl 邮箱注册教程&避坑指南 
 category: tutorial
 ---
 # Googl 邮箱注册教程&避坑指南  
