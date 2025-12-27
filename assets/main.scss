@@ -1,4 +1,4 @@
-/* 固定顶部导航栏样式，和底部一致 */
+/* 固定顶部导航栏样式，居中对齐 */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,7 +15,7 @@
   height: 60px;  /* 固定行高 */
 }
 
-/* 导航栏中链接的样式 */
+/* 左侧和右侧内容的样式 */
 .navbar-left a, .navbar-right a {
   color: #fff;
   text-decoration: none;
@@ -37,14 +37,4 @@
 .page-title h1 {
   font-size: 24px;
   color: #333;
-}
-
-/* 底部样式 */
-.site-footer {
-  background-color: #333;
-  color: #888;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px 0;
-  border-top: 2px solid #444;
 }
