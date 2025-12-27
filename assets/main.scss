@@ -1,17 +1,14 @@
-/* Header 样式 */
+/* 修改 .header-inner 容器 */
 .header-inner {
-    display: flex;  /* 使用 flexbox 进行布局 */
-    justify-content: center;  /* 水平居中对齐 */
-    align-items: center;  /* 垂直居中对齐 */
-    width: 100%;  /* 宽度 100% */
-    text-align: center;  /* 文字居中 */
-    padding: 20px 0;  /* 上下内边距 */
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;  /* 垂直居中 */
+    padding: 20px 10px;  /* 调整左右内边距来适应页面 */
+    width: 100%;  /* 设置宽度为 100% */
+    text-align: center;  /* 确保标题居中 */
 }
 
-.header-left, .site-nav {
-    margin: 0 15px;  /* 左右间距，确保它们有空间，不会挤在一起 */
-}
-
+/* 如果需要修改 .site-title 位置 */
 .site-title {
     font-weight: 700;
     font-size: 18px;
@@ -19,28 +16,18 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     text-decoration: none;
-    margin-right: 20px; /* 可选，给左右之间加入一点空隙 */
 }
 
+/* 确保标题的hover效果 */
 .site-title:hover {
-    background: #f5f5f5;  /* 悬浮效果 */
+    background-color: #f5f5f5;
 }
 
+/* 修改返回目录的链接 */
 .site-nav .page-link {
     font-weight: 600;
     text-decoration: none;
     padding: 6px 12px;
     border: 1px solid #ddd;
     border-radius: 10px;
-}
-
-/* 响应式布局设置 */
-@media (max-width: 768px) {
-    .header-inner {
-        flex-direction: column;  /* 在小屏幕下，调整为垂直排列 */
-        align-items: center;
-    }
-    .header-left, .site-nav {
-        margin: 10px 0;  /* 给上下部分留出空间 */
-    }
 }
