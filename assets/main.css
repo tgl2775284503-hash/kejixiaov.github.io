@@ -1,34 +1,22 @@
-/* Header 样式 */
+/* 固定顶部导航栏 */
 .header-inner {
-  display: flex;
-  justify-content: center;  /* 水平居中对齐 */
-  align-items: center;      /* 垂直居中对齐 */
-  padding: 20px 0;          /* 上下内边距 */
-  width: 100%;              /* 容器宽度为100% */
-  text-align: center;       /* 确保文字居中 */
+    position: fixed; /* 固定定位 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 可根据需求设置背景颜色 */
+    z-index: 9999; /* 确保导航栏在其他内容之上 */
+    padding: 10px 20px; /* 根据需求调整间距 */
+    display: flex;
+    justify-content: space-between; /* 让视频入口和返回目录之间分开 */
+    align-items: center;
 }
 
-.header-left, .site-nav {
-  margin: 0 15px; /* 左右之间的间距 */
+.header-left {
+    /* 视频入口样式 */
 }
 
-.site-title {
-  font-weight: 700;
-  font-size: 18px;
-  padding: 6px 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-.site-title:hover {
-  background: #f5f5f5;
-}
-
-.site-nav .page-link {
-  font-weight: 600;
-  text-decoration: none;
-  padding: 6px 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+.header-right {
+    /* 返回目录样式 */
+    margin-left: auto; /* 让返回目录右对齐 */
 }
